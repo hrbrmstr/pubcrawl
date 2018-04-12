@@ -6,8 +6,6 @@
 #' epub_to_text(system.file("extdat", "augustine.epub", package="pubcrawl"))
 epub_to_text <- function(path) {
 
-  path <- system.file("extdat", "augustine.epub", package="pubcrawl")
-
   path <- path.expand(path)
 
   bk <- archive::archive(path)
