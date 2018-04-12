@@ -16,9 +16,17 @@ The following functions are implemented:
 
 - `epub_to_text`:	Convert an epub file into a data frame of plaintext chapters
 
+## NOTE
+
+There are edge cases I've totally not covered yet. Feel free to jump in and make this a real, useful package!
+
 ## TODO
 
-Refactor so there aren't so many heavy dependencies
+- [ ] Refactor so there aren't so many heavy dependencies
+- [ ] Try to get `hgr` on CRAN so it's not a GH dep
+- [ ] Better docs
+- [ ] Embed some epubs for examples and tests
+- [ ] Setup Travis, Appveyor, code coverage
 
 ## Installation
 
