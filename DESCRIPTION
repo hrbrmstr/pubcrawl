@@ -8,7 +8,9 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: Convert 'epub' Files to Text
+Description: The 'epub' file format is really just a structured 'ZIP' archive with 
+    metadata, graphics and (usually) 'HTML' text. Tools are provided to turn an 'epub'
+    file into a tidy data frame.
 URL: https://github.com/hrbrmstr/pubcrawl
 BugReports: https://github.com/hrbrmstr/pubcrawl/issues
 Encoding: UTF-8
@@ -23,7 +25,8 @@ Imports:
     readr,
     dplyr,
     stringi,
-    hgr
+    hgr,
+    archive
 Remotes:
     jimhester/archive,
     hrbrmstr/hgr

@@ -6,7 +6,9 @@
 \alias{pubcrawl-package}
 \title{Convert 'epub' Files to Text}
 \description{
-Convert 'epub' Files to Text
+The 'epub' file format is really just a structured 'ZIP' archive with
+metadata, graphics and (usually) 'HTML' text. Tools are provided to turn an 'epub'
+file into a tidy data frame.
 }
 \author{
 Bob Rudis (bob@rud.is)

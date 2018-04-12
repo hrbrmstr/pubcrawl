@@ -10,6 +10,10 @@ Convert 'epub' Files to Text
 
 Convert 'epub' Files to Text
 
+The 'epub' file format is really just a structured 'ZIP' archive with 
+metadata, graphics and (usually) 'HTML' text. Tools are provided to turn an 'epub'
+file into a tidy data frame.
+
 ## What's Inside The Tin
 
 The following functions are implemented:
