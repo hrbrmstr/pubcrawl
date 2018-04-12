@@ -1,0 +1,46 @@
+---
+output: rmarkdown::github_document
+---
+
+# pubcrawl
+
+Convert 'epub' Files to Text
+
+## Description
+
+Convert 'epub' Files to Text
+
+## What's Inside The Tin
+
+The following functions are implemented:
+
+- `epub_to_text`:	Convert an epub file into a data frame of plaintext chapters
+
+## TODO
+
+Refactor so there aren't so many heavy dependencies
+
+## Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/pubcrawl")
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE, include=FALSE}
+options(width=120)
+```
+
+## Usage
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+library(pubcrawl)
+library(tidyverse)
+
+# current verison
+packageVersion("pubcrawl")
+
+```
+
+```{r}
+epub_to_text("~/Data/R Packages.epub")
+```
