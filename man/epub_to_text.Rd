@@ -4,10 +4,13 @@
 \alias{epub_to_text}
 \title{Convert an epub file into a data frame of plaintext chapters}
 \usage{
-epub_to_text(path)
+epub_to_text(path, encoding = "UTF-8")
 }
 \arguments{
 \item{path}{path to epub}
+
+\item{encoding}{Some content may require special handling of
+encodings. The default (`UTF-8`) can be overriden with this parameter.}
 }
 \description{
 Convert an epub file into a data frame of plaintext chapters
