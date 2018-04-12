@@ -21,13 +21,11 @@ Suggests:
 Depends:
     R (>= 3.2.0)
 Imports:
-    purrr,
-    readr,
-    dplyr,
+    xml2,
+    xslt,
+    rvest,
     stringi,
-    hgr,
     archive
 Remotes:
-    jimhester/archive,
-    hrbrmstr/hgr
+    jimhester/archive
 RoxygenNote: 6.0.1.9000

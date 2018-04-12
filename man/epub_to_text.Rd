@@ -13,7 +13,5 @@ epub_to_text(path)
 Convert an epub file into a data frame of plaintext chapters
 }
 \examples{
-\dontrun{
-epub_to_text("~/Data/R Packages.epub")
-}
+epub_to_text(system.file("extdat", "augustine.epub", package="pubcrawl"))
 }

@@ -2,21 +2,22 @@
 #'
 #' @param path path to epub
 #' @export
-#' @examples \dontrun{
-#' epub_to_text("~/Data/R Packages.epub")
-#' }
+#' @examples
+#' epub_to_text(system.file("extdat", "augustine.epub", package="pubcrawl"))
 epub_to_text <- function(path) {
+
+  path <- system.file("extdat", "augustine.epub", package="pubcrawl")
 
   path <- path.expand(path)
 
   bk <- archive::archive(path)
 
-  dplyr::filter(bk, stri_detect_fixed(path, "html")) %>%
-    dplyr::mutate(content = map_chr(path, ~{
-      archive::archive_read(bk, .x) %>%
-        readr::read_lines() %>%
-        paste0(collapse = "\n") %>%
-        hgr::clean_text()
-    }))
+  bk <- bk[stri_detect_fixed(bk$path, "html"),]
+
+  bk$content <- vapply(bk$path, clean_epub, character(1), bk = path)
+
+  class(bk) <- c("tbl_df", "tbl", "data.frame")
+
+  bk
 
 }

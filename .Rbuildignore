@@ -9,3 +9,6 @@
 ^README_files$
 ^doc$
 ^tmp$
+^appveyor\.yml$
+^codecov\.yml$
+^CONDUCT\.md$

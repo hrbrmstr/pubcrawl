@@ -8,5 +8,9 @@
 #' @name pubcrawl
 #' @docType package
 #' @author Bob Rudis (bob@@rud.is)
-#' @import purrr dplyr stringi hgr readr archive
+#' @import stringi
+#' @import archive
+#' @import xslt
+#' @importFrom rvest html_text
+#' @importFrom xml2 read_html read_xml
 NULL
