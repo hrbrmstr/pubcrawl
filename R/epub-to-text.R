@@ -12,7 +12,7 @@ epub_to_text <- function(path, encoding = "UTF-8") {
 
   bk <- archive::archive(path)
 
-  bk <- bk[stri_detect_fixed(bk$path, "html"),]
+  bk <- bk[stri_detect_regex(bk$path, "(\\.xhtml|\\.htm\\.html)"),]
 
   bk$content <- vapply(
     bk$path,
