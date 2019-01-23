@@ -1,3 +1,8 @@
+#  ***  IMPORTANT ***
+
+No further development will occur in this package as it has been supeseded by the actively maintained and quite spiffy! [`epubr`](https://github.com/ropensci/epubr) package.
+
+--------------
 
 [![Travis-CI Build
 Status](https://travis-ci.org/hrbrmstr/pubcrawl.svg?branch=master)](https://travis-ci.org/hrbrmstr/pubcrawl)
